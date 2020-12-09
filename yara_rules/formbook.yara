@@ -29,7 +29,7 @@ rule formbook_crypter {
         $mz = { 4d 5a }
  
         $shell = { 4D 5A 45 52 E8 00 00 00 00 58 83 E8 09 8B C8 83 C0 3C 8B 00 03 C1 83 C0 28 03 08 FF E1 90 00 00}
-				$opcode_check = {8B 4D FC 8A 04 39 03 CF 88 45 F4 8D 50 C0 80 FA 1F 77 18 6A 01 51 8D 04 1E 50 E8 ?? ?? ?? ?? 46 83 C4 0C FF 45 FC 89 75 F8 EB 25 2C 70 3C 0F 77 }
+	$opcode_check = {8B 4D FC 8A 04 39 03 CF 88 45 F4 8D 50 C0 80 FA 1F 77 18 6A 01 51 8D 04 1E 50 E8 ?? ?? ?? ?? 46 83 C4 0C FF 45 FC 89 75 F8 EB 25 2C 70 3C 0F 77 }
      
     condition:
         ($mz at 0) and ($shell at 0) or ($opcode_check)
