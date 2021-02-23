@@ -5,7 +5,7 @@ rule gh0st_rat_loader {
         author =  "tcontre"
         description = "detecting gh0strat_loader"
         date =  "2021-02-22"
-				sha256 = "70ac339c41eb7a3f868736f98afa311674da61ae12164042e44d6e641338ff1f"
+	sha256 = "70ac339c41eb7a3f868736f98afa311674da61ae12164042e44d6e641338ff1f"
 
     strings:
         $mz = { 4d 5a }
@@ -23,9 +23,9 @@ rule gh0st_rat_loader {
 rule gh0st_rat_payload {
     meta:
         author =  "tcontre"
-        description = "detecting gh0strat_payload in memory without MZ header in memory"
+        description = "detecting gh0strat_payload in memory without MZ header"
         date =  "2021-02-22"
-				sha256 = "edffd5fc8eb86e2b20dd44e0482b97f74666edc2ec52966be19a6fe43358a5db"
+	sha256 = "edffd5fc8eb86e2b20dd44e0482b97f74666edc2ec52966be19a6fe43358a5db"
 
     strings:
 		    $dos = "DOS mode"	
