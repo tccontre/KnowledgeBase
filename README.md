@@ -1,2 +1,2 @@
 # KnowledgeBase
-Collection of tips, tools, arsenal and techniques I've learned during RE and other CyberSecStuff
+<img src ="banner-kb.png"> </img>
