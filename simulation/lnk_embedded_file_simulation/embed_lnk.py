@@ -38,17 +38,18 @@ def main():
         for i in file_list:
             
             ## write lfirst the lnk buff
-            print(f"[+] Embedding File: {i}, filesize: {hex(f_info_dict[i][0])}")
+
             f.write(f_info_dict[i][1])
             padd = compute_padding(f_info_dict[i][0])
             size_of_padd = len(padd)
-            print(f"[+] Computed Padding For {i}: {size_of_padd}")
+
             
             file_offset = f_info_dict[i][0] + size_of_padd
-            print(f"[+] Length of {i} + Padding: {hex(file_offset)}")
+
             
             
             f.write(padd)
+    print("[+] fatlnk.lnk-1 fully generated!")
     return
 
 
