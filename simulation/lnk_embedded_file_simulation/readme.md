@@ -1,3 +1,4 @@
+by. @tccontre18 - Br3akp0int
 # Description
 This simple tool will help to generate an LNK with embedded dummy docx and generated cab files to simulate the malicious LNK that uses this technique to collect and exfiltrate 
 information on the target host.
